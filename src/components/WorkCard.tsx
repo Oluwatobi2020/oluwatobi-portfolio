@@ -8,6 +8,7 @@ const fadeUp = keyframes`
 
 const WorkCard = ({ project, index }:any) => {
   const [hovered, setHovered] = useState(false);
+  console.log(hovered)
   return (
     <Box
       onMouseEnter={() => setHovered(true)}

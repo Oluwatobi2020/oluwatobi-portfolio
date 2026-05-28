@@ -10,7 +10,6 @@ import {
   Link,
   Stack,
 } from "@mui/material";
-import { keyframes } from "@mui/material/styles";
 import { NavLink } from "./shared/NavLink";
 import { AnimBox } from "./shared/AnimBox";
 import { projects, skills } from "./shared/sampleData";
@@ -20,6 +19,7 @@ import dayjs from "dayjs";
 const Portfolio = () => {
   const [scrollY, setScrollY] = useState(0);
   const [cursorVisible, setCursorVisible] = useState(true);
+  console.log(cursorVisible)
 
   useEffect(() => {
     const link = document.createElement("link");
