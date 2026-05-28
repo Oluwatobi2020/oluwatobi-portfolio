@@ -5,7 +5,6 @@ import {
   Stack,
   keyframes,
   Chip,
-  Link,
 } from "@mui/material";
 import { useState } from "react";
 
@@ -15,7 +14,6 @@ const fadeUp = keyframes`
 `;
 
 const WorkCard = ({ project, index }: any) => {
-  console.log("project", project)
   const [hovered, setHovered] = useState(false);
   console.log(hovered);
   const handleRedirect = (linkUrl: string) => {
